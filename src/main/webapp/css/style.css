@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+table,td,th{
+	border:solid 1px #000000;
+}
+
+td,th{
+	padding:5px 10px;
+}
+
+img{
+	max-height: 100px;
+}
+
+header{
+	background-color: rgb(255, 128, 192);
+}
+
+h1{
+	color: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+main{
+	width:90%;
+	max-width: 800px;
+	margin:20px auto;
+}
+
+.buttonArea{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 16px 0;
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1列表示 */
+    padding: 8px 0;
+  }
+  .grid-item {
+    padding: 12px;
+  }
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 8px;
+}
+.checkbox-label {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+  gap: 6px; /* チェックボックスと文字の間 */
+  font-weight: bold;
+  cursor: pointer;
+}
+.filename {
+  word-break: break-all;
+  font-size: 0.9em;
+}
